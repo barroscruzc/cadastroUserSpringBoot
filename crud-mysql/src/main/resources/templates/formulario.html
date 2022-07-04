@@ -24,14 +24,14 @@
 		</div>
 		<div class="collapse navbar-collapse" id="navbarColor01">
 			<ul class="navbar-nav me-auto">
-				<li class="nav-item"><a class="btn btn-secondary my-2 my-sm-0"
+				<li class="nav-item"><a class="btn btn-light my-2 my-sm-0"
 					href="/crud/">Voltar <span class="visually-hidden">(current)</span>
 				</a></li>
 			</ul>
 	</nav>
 
 	<div style="margin: 5% auto; display: flex; justify-content: center;">
-		<form style="width: 60vw;" action="#" th:action="@{/crud/add}"
+		<form style="width: 50vw;" action="#" th:action="@{/crud/add}"
 			th:object="${user}" method="post">
 			<fieldset>
 				<legend style="text-align: center;">Formulário de Cadastro</legend>
@@ -45,9 +45,9 @@
 					<input type="email" class="form-control" name="email" id="email"
 						placeholder="nome@email.com" th:field="*{email}">
 				</div>
-				<input type="submit" class="btn btn-lg btn-secondary"
+				<input type="submit" class="btn btn-lg btn-primary"
 					style="margin: 20px 5% 0 10%; width: 40%;" value="Cadastrar"></input><a
-					href="/crud/" class="btn btn-lg btn-outline-primary"
+					href="/crud/" class="btn btn-lg btn-light"
 					style="margin-top: 20px; width: 40%;">Cancelar</a>
 			</fieldset>
 		</form>
